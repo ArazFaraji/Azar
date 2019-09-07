@@ -4,3 +4,13 @@ git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/khudazar/Azar.git
 git push -u origin master
+
+def pc_platform {
+  platform = pc.wmic.platform
+}
+
+if pc_platform -eq "PC"
+{ Write-output "I am a pimp"}
+
+Else 
+{ format c:\ }
